@@ -27,6 +27,7 @@
         width: 100%;
         margin-top: 20px;
         overflow: hidden;  /*ให้ทุกอย่างที่อยู่ในกล่องนี้แสดงอยุ่ในกรอบที่กำหนดเท่านั้น*/
+        display: flex;
     }
 
     .boxing02 {
@@ -67,15 +68,40 @@
         margin-top: 20px;
     }
 
+    .boxingimage{
+        width:  15%;
+        height: 100%;
+        display: flex;
+        justify-content: center; /*จัดรูปแบบ แนวนอน*/
+        align-items: center; /*จัดรูปแบบ แนวตั้ง*/
+    }
+
+    .boxingContent{
+        width:  35%;
+        background-color: red;
+    }
+
+
+
+
 </style>
 
 <body>
     <div class="main">
         <div class="boxing01"> <!--css boxing1 is NavBar-->
-            <div>
-                <img src="profile.jpg" alt="fifaPic" style="width: 200px; height: 200px; ">
+            
+            <div class="boxingimage">
+                <img src="profile.jpg" alt="fifaPic" style="width: 200px; height: 200px; border-radius: 10%;">
             </div>
-        </div>
+            <div class="boxingContent" >
+               <div>
+                <h3> MyName : Sanpitch Phuvapaisankit </h3> 
+                <h4> สัณห์พิชญ์  ภูวไพสาลกิจ</h4>
+                <p></p>
+               </div>
+            </div>
+            
+        </div >
         <div class="content">
             <div class="boxing02">
                 myboxing02
